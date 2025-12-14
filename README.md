@@ -7,7 +7,21 @@ The system is designed to handle highly imbalanced data, where fraudulent transa
 
 ## 📊 Dataset Description 
 
-The dataset consists of financial transaction records enriched with engineered behavioral features and model predictions.
+This project is built using a combined financial transactions dataset created from two well known datasets from Kaggle:
+
+1. Credit Card Transactions Dataset
+
+This dataset represents real world credit card transaction behavior and includes details such as transaction amount, transaction type, customer identifiers, timestamps, and fraud labels. It captures common spending patterns as well as rare fraudulent activities typically seen in financial systems.
+
+2. PaySim Dataset
+
+PaySim is a synthetic financial transaction dataset generated to simulate mobile money transactions. It is widely used in fraud detection research and mimics real transaction flows such as payments, cash in, cash out, transfers, and debit operations. The dataset preserves realistic transaction distributions and fraud patterns while protecting sensitive financial information.
+
+Combined Dataset
+
+Both datasets were merged to form a large scale dataset with over 6.6 million transaction records, enabling robust fraud detection modeling on highly imbalanced data. The combined dataset contains transactional, temporal, and behavioral attributes used for exploratory data analysis, feature engineering, and machine learning.
+
+Due to its large size, the combined dataset could not be uploaded to this repository. However, all preprocessing steps, feature definitions, and modeling workflows are fully documented to ensure reproducibility using similar datasets.
 
 #### Key Columns Used 
 
