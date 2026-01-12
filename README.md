@@ -42,7 +42,7 @@ Fraud distribution
 
 ## 🚀 Feature Engineering
 
-To capture realistic fraud behavior, multiple temporal and transactional features were engineered.
+To capture adversarial behavior (where bad actors attempt to bypass thresholds), I engineered temporal features like secs_since_prev to detect high-velocity 'burst' attacks.
 
 ##### secs_since_prev: 
 
@@ -93,6 +93,9 @@ Minimal gap between training and validation curves
 Early convergence indicates strong generalization
 
 This confirms the model performs well despite extreme class imbalance.
+
+In a Trust & Safety context, missing a fraudulent event (False Negative) is costlier than a manual review (False Positive). Therefore, the threshold was tuned to prioritize Recall, ensuring high-risk 'needles' are captured for investigation.
+
 
 ## 📈 Power BI Dashboard Insights
 
@@ -160,6 +163,9 @@ Monitoring of high-exposure transaction categories
 Seamless integration with BI tools for decision support
 
 Even with a very low fraud rate, the financial impact remains substantial, making proactive detection critical.
+
+The Power BI integration serves as a Decision Support System, translating high-dimensional ML outputs into explainable behavioral signals for cross-functional policy stakeholders.
+
 
 ## 💻 Technologies Used
 
